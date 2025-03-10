@@ -1,4 +1,5 @@
 package shop;
+import shop.ShoppingCart;
 
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ public class MainApp {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Available items in the shop!");
-        System.out.println("------------------------");
+        System.out.println("------------------------"); 
         for (int i = 0; i < store.getItems().size(); i++) {
             System.out.println((i + 1) + ". " + store.getItems().get(i));
         }
